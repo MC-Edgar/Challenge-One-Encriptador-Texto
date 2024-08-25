@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./Imagenes/Vector_logo.png" alt="">
+        </div>
+        
+    </header>
+    
+    <main>
+        <div class="main">
+
+            <div class="left">
+                <textarea id="ingresoTexto"
+                class= "ingreso__texto" 
+                placeholder="Ingrese el texto aqui"></textarea>
+                <div class="left__footer">
+                    <img src="./Imagenes/Vector-excl.png" alt="">
+                    <span class="left__info"> Solo letras minúsculas y sin acentos</span>
+                    <div class="left__botones">
+
+
+                        <button id="botonEncriptar" 
+                        class="boton__encriptar">Encriptar</button>
+                        
+                        
+                        <button boton id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="right ajustar">
+                <img id="munheco"  class="munheco" src="./Imagenes/munheco.png" alt="">
+                <textarea id="mensajeFinal" class="mensaje__final ajustar" placeholder="Ningun mensaje fue encontrado">  </textarea>
+                <p id="rightInfo"  class="right__info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
+                
+
+            </div>
+        </div>    
+
+
+    </main>
+
+    <footer> 
+    Desarrollado por Edgar M. Coronel para Alura Latam | 2024
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
